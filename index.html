@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>$NIGGACOCK</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">$NIGGACOCK</h1>
+    <p class="subtitle">Big balls. Bigger dreams.</p>
+
+    <p class="description">
+      $NIGGACOCK is more than a meme — it's a savage celebration of unfiltered energy, laughter, and raw power. Born to dominate the charts and the streets.
+    </p>
+
+    <div class="buttons">
+      <a href="#" class="btn telegram">Join Telegram</a>
+      <a href="#" class="btn twitter">Follow Twitter</a>
+    </div>
+
+    <div class="contract">
+      <p>Contract Address:</p>
+      <div class="contract-box">
+        <input type="text" id="contract" value="0x0000000000000000000000000000000000000000" readonly />
+        <button onclick="copyContract()">Copy</button>
+      </div>
+    </div>
+
+    <div class="roadmap">
+      <h2>Roadmap</h2>
+      <ul>
+        <li><strong>Phase 1:</strong> Launch stealth, viral memes, Twitter raids</li>
+        <li><strong>Phase 2:</strong> Listings on DEXTools, CG & CMC fast track</li>
+        <li><strong>Phase 3:</strong> Influencer partnerships, billboard stunts</li>
+        <li><strong>Phase 4:</strong> Global takeover, merch, meme museum</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function copyContract() {
+      const input = document.getElementById("contract");
+      input.select();
+      input.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(input.value).then(() => {
+        alert("Contract copied!");
+      });
+    }
+  </script>
+</body>
+</html>
